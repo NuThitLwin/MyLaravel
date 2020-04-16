@@ -12,6 +12,9 @@
 */
 
 Route::get('/', function () {
-	 return phpinfo();
-    //return view('welcome');
+	 //return phpinfo(); 
+    return view('welcome');
 });
+//Route::view('viewWater','waters');
+//Route::get('/water/{id}','WaterController@index');
+Route::get('/waterCtr','WaterController@index');
